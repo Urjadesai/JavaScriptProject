@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>DOMsAndEvents</title>
+</head>
+<!-- <body onload="alertboxblog()"> -->
+<body onload="elementshide()">
+
+    Fahrenheit: <input type="text" id="ftemp" onkeyup="convertftoc()" ><br><br>
+    Result: <input type="number" id="result"  onkeyup="convertftoc()"><br>
+    <br><br>
+    
+    <div id="hideElems" >
+        <div id="showElems">
+            <img src="imgs/Logo.png" >
+            <p>Have images, p tags, div tags and various other elements on the page. </p>
+            <div>
+                <span>
+                        When the page loads, an alert saying "welcome to my blog" should pop up.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <br><br>
+    <button onclick="hidecontent()">To Hide</button>
+    <button  ondblclick="showcontent()">To show</button>
+    <br><br>
+    <div id="tohideandshow">
+            <h4>List of Vegetables and fruits</h4>
+            <ul>
+                <li>onion</li>
+                <li>potato</li>
+                <li>tomato</li>
+                <li>mango</li>
+                <li>apple</li>
+                <li>kiwi</li>
+                <li>coriander</li>
+                <li>mint</li>
+            </ul>
+    </div>
+        
+    <br><br>
+    <button onmouseover="toshow()">To show data</button>
+    <button onmouseout="tohide()">To hide data</button><br><br>
+
+        <div id = main_one>
+                <p >
+                       data 1 for hidding data.
+                </p>
+        </div>   
+            <p id = main_two>
+                    data 2 for hidding data.
+            </p>
+            <p id = main_three>
+                  data 3 for hidding data.
+            </p>
+            <p>
+                data 4 for hidding data.
+            </p>
+           
+    <br><br>
+
+
+    <input type="checkbox" name="vehicle" value="car">car<br>
+    <input type="checkbox" name="vehicle" value="bike">bike<br>
+    <input type="checkbox" name="vehicle" value="scooty">scooty<br>
+    <input type="checkbox" name="vehicle" value="truck">Truck<br>
+    <input type="checkbox" name="vehicle" value="jeep">Jeep<br>
+    <input type="checkbox" name="vehicle" value="tempo">Tempo<br>
+    <input type="checkbox" name="vehicle" value="boat">Boat<br>
+    <input type="checkbox" name="vehicle" value="bicycle">Bicycle<br>
+    <input type="checkbox" name="vehicle" value="electric scooty">Electric Scooty<br>
+    <input type="checkbox" name="vehicle" value="rishaw">Rikshaw<br>
+
+    <p>
+        <button onclick="selectall()">Select All</button>
+        <button onclick="unselectall()">Unselect All</button>
+    </p>
+
+    <select id="fruits">
+        <option>  </option>
+        <option>mango</option>
+        <option>apple</option>
+        <option>banana</option>
+        <option>kiwi</option>
+        <option>chiku</option>
+    </select>
+    <br><br>
+    <button onclick="checkbutton()">VALIDATE</button> <br><br>
+
+    <div>
+        <ul>
+                <li><a href = "https://www.amazon.com/">  Amazon </a> </li>  <br/>
+                <li><a href = "https://www.apple.com/"> Apple </a> </li> <br/>
+                <li><a href = "https://www.facebook.com/"> Facebook </a> </li><br/>
+                <li><a href = "https://www.microsoft.com/en-us/" target="_blank"> Microsoft </a></li> <br/>
+                <li><a href = "https://www.google.com/" target="_blank"> Google </a></li> <br/>
+                <li><a href = "https://www.samsung.com/global/galaxy/" target="_blank"> Samsung</a></li><br>
+
+        </ul>       
+    </div>
+    <br>
+    <button onclick="addlinktourl()">CHECK URL</button>
+    <button onclick="addlink()" >ADD LINK</button>
+    
+    <script src = "DomsandEvents.js"></script>
+</body>
+</html>

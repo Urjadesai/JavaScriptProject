@@ -1,0 +1,50 @@
+<!DocType html>
+<head>
+    <title>
+        variable and operator.
+    </title>
+</head>
+<body>
+
+    <input type="text" value=" 20"/> + <input type="text" value="10" /> 
+    <input type="button" value="Addition" onclick="addsum()"/> =
+    <p id="add"> </p>
+
+    <input type="text" value=" 20"/> * <input type="text" value="10" /> 
+    <input type="button" value="Mutliplication" onclick="multisum()"/>=
+    <p id="multi"> </p>
+
+    <input type="text" value=" 20"/> % <input type="text" value="10" /> 
+    <input type="button" value="Modulus" onclick="modsum()"/> =
+    <p id="mod"> </p>
+   
+</body>
+
+<script>
+    var a=20;
+    var b=10;
+   function addsum()
+   {
+    var result = a + b;
+    document.getElementById("add").innerHTML = result;
+    window.alert(result);
+
+   }
+
+   function multisum()
+   {
+    var result = a * b;
+    document.getElementById("multi").innerHTML = result;
+    window.alert(result);
+   }
+
+    function modsum()
+    {
+     var result = a%b;
+    document.getElementById("mod").innerHTML= result;
+    window.alert(result);
+    }    
+
+    
+</script>
+</html>

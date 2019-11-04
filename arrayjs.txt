@@ -1,0 +1,42 @@
+Arrays;
+
+what the fuction will do
+
+what it going to return 
+
+hown many paramaters to pass. 
+
+to find the length of an array- 
+
+var frt = [ ] 
+
+var x= frt.length;
+//--------------------------
+
+var myarray = ne Array(3);
+
+myarray[0]='urja'
+
+//-------------------
+to empty an array
+
+frt.length=0;
+console.log(frt);
+
+Also use pop() and splice() methods.
+
+pop()----> this will remove from end
+
+push()----->add from end
+
+//---------------------------
+
+shift()--->add data from the front
+
+unshift()---> remove data from the front.
+
+//-------------------------------------
+
+splice--> add/remove any element in array.
+
+slice---> return the selected element in an array

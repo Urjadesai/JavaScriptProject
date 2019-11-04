@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <title>Extra Assignment DOM</title>
+</head>
+<body > 
+
+    <select id="myid" onchange="checkoption()">
+        <option>none</option>
+        <option  id="checkvisibility" >Make Invisible</option>
+        <option id="checkcolor">Change Color</option>
+        <option id="checkvisibilityandcolor">Make visible and Change color</option>
+        <option id=" default1">Default</option>
+    </select>
+
+    <p id="myp">
+        Create a drop down box with the below options. Also have a paragraph and act accordingly upon the paragraph when the user selects any options below.
+        a. Make Invisible
+        b. Change Color
+        c. Make visible and Change color
+        d. Default
+    </p>
+<div>
+    Full Name : <input type="text" id="fname"> <br><br>
+    Given Name : <input type="text" id="gname"><br><br>
+
+    <button onclick="valtransfer()">Que-2</button>
+</div>
+<!-- ---------------------Que-3--------------------- -->
+    <br><br>
+   <div>
+    <input type="radio" value="male" id="male" name="radio">Male
+   <input type="radio" value="female" id="female" name="radio"> Female <br><br>
+
+   <button onclick="checkradiobutton()">Que-3</button>
+   </div>
+    <br><br>
+<!-- -----------------Que-4----------------------------->
+   <div id="changediv">
+       My Name : <input type="text" id="myname"> <br><br>
+
+       <button onclick="checkthefollowing()">Que-4</button>
+   </div>
+<!-- ---------------Que-5------------------------------ -->
+   <br><br>
+   <div>
+       First Name : <input type="text" id="firstname"><br><br>
+       Given Name : <input type="text" id="givenname"><br><br>
+
+       <input type="radio" id="veg" name="menu">Veg 
+       <input type="radio" id="nonveg" name ="menu">Non-Veg
+       <br><br>
+       
+       <button onclick="checkradiobox()">Que-5</button>
+
+   </div>
+<!-- ----------------------Que-6----------------------------- -->
+   <form>
+    <br><br>
+    Full Name : <input type="text" id="fullname"> <br><br>
+    company Name : <input type="text" id = "cname"> <br><br>
+
+    <input type="radio" value = 'ac' id = "cooler1"  name = "cooler"> A/C 
+    <input type = "radio" value="nonac" id = "cooler2" name = "cooler"> Non A/C
+    <br><br>
+    <input type="checkbox" id="right" name = "fruits" > Mango <br>
+    <input type="checkbox" id="wrong" name=" fruits"> Apple <br>
+    <input type="checkbox" id="maybe" name="fruits"> Banana<br>
+    <br><br>
+    <button type="button" onclick="formvalidation()">Que-6</button>
+   </form>
+<!------------------- Que 7------------------------------------ -->
+   <div id="mydiv">
+       <img src="imgs/Logo.png" id="removeimg"><br> 
+       <input type="text" id="ename" value=" Employee Name: " style="display: none"><br><br>
+       <input type="text" id="jtitle" value="Job Title : " style="display: none"> <br><br>
+       <img src="imgs/pushbuttons-reduced.jpg" style="display: none" id="imgshow"> <br><br>
+       
+       <!-- <div>
+           <input type="text" value="State" id="state"  style ="display: none"><br><br>
+           <input type="text" value="country" id="country" style="display: none">
+       </div>
+       <br><br>                                                                                 -->
+        
+       <!-- <button onclick="buttonelement()">Que-7 B</button> -->
+       <!-- <button onclick="wrapperelement()">Que-7 A</button> -->
+   </div>
+   <button onclick="wrapperelement()">Que-7 A</button>
+   
+<!--------------------- Que-8 ----------------------------->
+   <br><br>
+   <div style="border: 1px solid black" >
+    <p style= "color:blue" >JavaScript is not a compiled language, but it is a translated language. </p>
+    <h3 id="blue"></h3>
+    <p style= "color:pink">The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser.</p>
+    <p id="pink"></p>
+    <p style= "color:purple">When html document is loaded in the browser, it becomes a document object. </p>
+    <p id="purple"></p>
+    <p style= "color:red" >It is the root element that represents the html document. </p>
+    <p id="red"></p>
+   </div>
+   
+   <!-- -------------------Que-9---------------------------------->
+   <br><br>
+   
+       <input type="text"  id="namegiven"><br><br>
+       <input type="text"  id="add"><br><br>
+       <input type="text"  id="stt"><br><br>
+
+       <button onclick="displaydata()">Que-9 A</button>
+       <button onclick="returndisplaydata()">Que-9 B</button><br><br>
+       <div id= "mydata" style= "height:150px; width:200px; border: 1px solid black">
+
+        <p id="one"> </p>
+        <p id="two"> </p>
+        <p id="three"> </p>
+   </div>
+<!-----------------Que-10 ------------------------->
+   <br><br>
+   <input type="radio" id="summer" name="hot" onclick="season()">summer<br><br>
+   <input type="checkbox" id="winter" onclick="season()" >winter<br><br>
+   <select id="spring" onclick="season()">
+       <option>none</option>
+       <option>Mango</option>
+       <option>Apple</option>
+       <option>Banana</option>
+   </select> 
+   <span id="fall"></span>  
+
+<!----------------------Que-11----------------------->
+<br><br>
+<div id="tryMe">
+<input type="text" id="mytext1"><br><br>
+<input type="text" id="mytext2"><br><br>
+<input type="text" id="mytext3"><br><br>
+
+<input type="radio" id="myradio1" name="sample1" >Mine
+<input type="radio" id="myradio2" name="sample1" >Yours
+<br><br>
+<input type="checkbox" id="mycheckbox">whatever is yours is mine <br><br>
+
+<select id="myselect">
+    <option></option>
+    <option>NJ</option>
+    <option>MA</option>
+    <option>NY</option>
+    <option>FL</option>
+</select>
+
+<br><br>
+<button id="submit" onclick="allinone()">Que-11 submit</button>
+</div>
+
+<br><br>
+
+<!-- --------------Que-12-------------- -->
+
+<p id="demo"></p>
+<img id="myimg" src = "imgs/express-logo.png" alt="hiiiii this is image" onmouseover="showimg()" style=" border: 1px solid black">
+
+<span id = "myspan" ></span>
+
+<br><br>
+<input type = "text" id="test" onkeyup="showimg()">
+   <script src = "extraDOM.js"></script>
+</body>
+</html>
